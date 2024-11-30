@@ -17,7 +17,7 @@
     "lint:strict": "eslint --max-warnings 0 .",
     "typecheck": "tsc",
     "test": "uvu -r esbuild-register tests -i utils",
-    "build": "node build.js && tsc -p tsconfig.build.json"
+    "test:dir": "uvu -r esbuild-register --ignore '^(?!.*\\.test\\.ts).*\\.ts'"
   },
   "nano-staged": {
     "**/*.{js,cjs,mjs,ts,mts,cts,json,md,yaml}": [
@@ -26,29 +26,6 @@
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm nano-staged"
-  },
-  "files": [
-    "*.d.ts",
-    "index.*"
-  ],
-  "clean-publish": {
-    "packageManager": "pnpm",
-    "withoutPublish": true,
-    "tempDir": "dist",
-    "fields": [
-      "scripts",
-      "nano-staged",
-      "simple-git-hooks"
-    ]
-  },
-  "publishConfig": {
-    "publishConfig": {
-      "access": "public"
-    },
-    "private": false,
-    "main": "index.cjs",
-    "module": "index.js",
-    "types": "index.d.ts"
   },
   "devDependencies": {
     "@types/node": "^22.9.0",
