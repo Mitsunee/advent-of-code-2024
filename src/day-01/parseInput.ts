@@ -1,7 +1,9 @@
+import { splitInputByLine } from "../shared/splitInputByLine";
+
 export type PuzzleInput = [number, number][];
 
 export function parseInput(input: string) {
-  const lines = input.replace(/\n+$/, "").split("\n");
+  const lines = splitInputByLine(input);
   return lines.map(line => {
     const match = line.match(/^(?<a>\d+) +(?<b>\d+)$/);
     if (!match?.groups) throw new Error(`Could not parse input line: ${line}`);
