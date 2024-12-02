@@ -9,7 +9,7 @@ foxkit.base.languageOptions.ecmaVersion = 2024;
  * @see https://github.com/foxkit-js/eslint-config-foxkit/ for more information
  */
 export default [
-  { ignores: ["dist/**"] },
+  { ignores: ["src/template/**"] },
   foxkit.base,
   foxkit.typescript,
   foxkit.configureTS({ tsconfigRootDir: __dirname }),
