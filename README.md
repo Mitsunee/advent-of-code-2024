@@ -34,12 +34,12 @@ To run all tests in only a specific directory a special `test:dir` script is use
 pnpm test:dir src/day-n
 ```
 
-## Stars: 6/50
+## Stars: 8/50
 
 | Week |  Monday  | Tuesday  | Wednesday | Thursday | Friday | Saturday |  Sunday  |
 | :--: | :------: | :------: | :-------: | :------: | :----: | :------: | :------: |
 |  1   |          |          |           |          |        |          | 1st ⭐⭐ |
-|  2   | 2nd ⭐⭐ | 3rd ⭐⭐ |    4th    |   5th    |  6th   |   7th    |   8th    |
+|  2   | 2nd ⭐⭐ | 3rd ⭐⭐ | 4th ⭐⭐  |   5th    |  6th   |   7th    |   8th    |
 |  3   |   9th    |   10th   |   11th    |   12th   |  13th  |   14th   |   15th   |
 |  4   |   16th   |   17th   |   18th    |   19th   |  20th  |   21st   |   22nd   |
 |  5   |   23rd   |   24th   |   25th    |
