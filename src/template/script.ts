@@ -25,13 +25,16 @@ async function main() {
   const input = await readFile(args.input, "utf8");
 
   // output result
-  let result: unknown;
+  // USE DURING DEV ↓↓↓↓↓
+  let result: number;
   if (isPartB) {
     throw new Error("Part B unimplemented");
   } else {
     throw new Error("Part A unimplemented");
   }
 
+  // USE WHEN FINISHED ↓↓↓↓
+  //const result = (isPartB ? partB : partA)(input);
   return log.result(result);
 }
 
