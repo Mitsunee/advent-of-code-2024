@@ -16,7 +16,7 @@ pnpm install
 pnpm typecheck && pnpm test
 ```
 
-## Running a script or single test
+### Running a script or single test
 
 Since the code in this repository is written in TypeScript `tsx` is needed to run scripts:
 
@@ -24,15 +24,19 @@ Since the code in this repository is written in TypeScript `tsx` is needed to ru
 pnpm tsx src/day-n/script.ts
 ```
 
-Note: Some days are split into separate files like `part-1.ts` and `part-2.ts`. `tsx` can also be used to run only a single test by running it as a script!
-
-## Running tests for a specific day
+### Running tests for a specific day
 
 To run all tests in only a specific directory a special `test:dir` script is used:
 
 ```shell
 pnpm test:dir src/day-n
 ```
+
+## Prepare script
+
+To create a src directory for starting a solution with the script template simply run `./prepare.sh`.
+
+If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
 ## Stars: 10/50
 
