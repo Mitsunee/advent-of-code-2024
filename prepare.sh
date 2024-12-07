@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ $1 == "-h" ] || [ $1 == "--help" ]; then
+if [[ $1 == "-h" ]] || [[ $1 == "--help" ]]; then
   echo -e "Prepare\n  Usage: ./prepare.sh [day]\n";
   echo "The script creates the corresponding src directory for the day and copies the script template.";
   echo -e "\nArguments:\n    day: optional override for day the script is running for";
