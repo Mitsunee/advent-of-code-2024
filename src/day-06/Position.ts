@@ -1,4 +1,5 @@
-import type { Position } from "../shared/createBoundsChecker";
+import type { Position, PositionStr } from "../shared/coordinates";
+import { positionToString } from "../shared/coordinates";
 import type { Direction } from "./Direction";
 
 export interface GuardPosition extends Position {
@@ -6,7 +7,7 @@ export interface GuardPosition extends Position {
 }
 
 export function posToCoordStr(pos: GuardPosition) {
-  return `[${pos.x},${pos.y}]` as const;
+  return positionToString(pos);
 }
 
-export type PosStr = ReturnType<typeof posToCoordStr>;
+export type PosStr = PositionStr;

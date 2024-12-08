@@ -1,7 +1,4 @@
-export interface Position {
-  x: number;
-  y: number;
-}
+import type { Position } from "./coordinates";
 
 export interface MapBounds {
   height: number;
