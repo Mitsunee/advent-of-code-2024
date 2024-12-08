@@ -3,6 +3,7 @@ import { readFile } from "fs/promises";
 import { log, logger, timer } from "../logger";
 //import { partA } from "./partA";
 //import { partB } from "./partB";
+//import { solve } from "./solve";
 
 const getTime = timer();
 const { values: args } = parseArgs({
@@ -35,6 +36,8 @@ async function main() {
 
   // USE WHEN FINISHED ↓↓↓↓
   //const result = (isPartB ? partB : partA)(input);
+  // or
+  //const result = solve(input, isPartB);
   return log.result(result);
 }
 

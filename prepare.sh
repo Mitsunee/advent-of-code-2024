@@ -19,6 +19,6 @@ fi;
 mkdir $DIR_PATH;
 cp src/template/script.ts $DIR_PATH/;
 sed -i "s=input/day-XX=input/day-${SELECTED_DAY}=" $DIR_PATH/script.ts;
-sed -i '12d' $DIR_PATH/script.ts;
+sed -i '13d' $DIR_PATH/script.ts;
 
 echo "Created directory at '$DIR_PATH' and copied script template";
