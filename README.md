@@ -38,12 +38,12 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 14/50
+## Stars: 16/50
 
 | Week |  Monday  | Tuesday  | Wednesday | Thursday |  Friday  | Saturday |  Sunday  |
 | :--: | :------: | :------: | :-------: | :------: | :------: | :------: | :------: |
 |  1   |          |          |           |          |          |          | 1st ⭐⭐ |
-|  2   | 2nd ⭐⭐ | 3rd ⭐⭐ | 4th ⭐⭐  | 5th ⭐⭐ | 6th ⭐⭐ | 7th ⭐⭐ |   8th    |
+|  2   | 2nd ⭐⭐ | 3rd ⭐⭐ | 4th ⭐⭐  | 5th ⭐⭐ | 6th ⭐⭐ | 7th ⭐⭐ | 8th ⭐⭐ |
 |  3   |   9th    |   10th   |   11th    |   12th   |   13th   |   14th   |   15th   |
 |  4   |   16th   |   17th   |   18th    |   19th   |   20th   |   21st   |   22nd   |
 |  5   |   23rd   |   24th   |   25th    |
