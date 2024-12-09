@@ -3,8 +3,7 @@ import { readFile } from "fs/promises";
 import { log, logger, timer } from "../logger";
 import { parseDisk } from "./parseDisk";
 import { partA } from "./partA";
-//import { partB } from "./partB";
-//import { solve } from "./solve";
+import { partB } from "./partB";
 
 const getTime = timer();
 const { values: args } = parseArgs({
@@ -27,18 +26,7 @@ async function main() {
   const disk = parseDisk(input);
 
   // output result
-  // USE DURING DEV ↓↓↓↓↓
-  let result: number;
-  if (isPartB) {
-    throw new Error("Part B unimplemented");
-  } else {
-    result = partA(disk);
-  }
-
-  // USE WHEN FINISHED ↓↓↓↓
-  //const result = (isPartB ? partB : partA)(input);
-  // or
-  //const result = solve(input, isPartB);
+  const result = (isPartB ? partB : partA)(disk);
   return log.result(result);
 }
 

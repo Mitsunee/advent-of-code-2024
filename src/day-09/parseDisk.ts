@@ -1,9 +1,9 @@
-interface PuzzleFile {
+export interface PuzzleFile {
   id: number;
   size: number;
 }
 
-interface PuzzleFreeSpace {
+export interface PuzzleFreeSpace {
   id?: undefined;
   size: number;
 }
