@@ -44,13 +44,16 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 | :--: | :------: | :-------: | :-------: | :------: | :------: | :------: | :------: |
 |  1   |          |           |           |          |          |          | 1st ⭐⭐ |
 |  2   | 2nd ⭐⭐ | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐ | 6th ⭐⭐ | 7th ⭐⭐ | 8th ⭐⭐ |
-|  3   | 9th ⭐⭐ | 10th ⭐⭐ |   11th    |   12th   |   13th   |   14th   |   15th   |
+|  3   | 9th ⭐⭐ | 10th ⭐⭐ |  11th ⭐  |   12th   |   13th   |   14th   |   15th   |
 |  4   |   16th   |   17th    |   18th    |   19th   |   20th   |   21st   |   22nd   |
 |  5   |   23rd   |   24th    |   25th    |
 
 ### Skipped Stars:
 
-None yet :)
+<details>
+<summary><b>Day 11 Part 2</b></summary>
+<p>Could not come up with a solution that doesn't run out of memory in the high 30s. I'm assuming there's some sort of pattern one could take advantage of with the given ruleset, but I'm not the person to figure that out.</p>
+</details>
 
 <!---
 <details>
