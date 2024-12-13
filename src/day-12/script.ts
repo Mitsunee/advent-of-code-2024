@@ -3,8 +3,7 @@ import { readFile } from "fs/promises";
 import { log, logger, timer } from "../logger";
 import { splitInputByLine } from "../shared/splitInputByLine";
 import { partA } from "./partA";
-//import { partB } from "./partB";
-//import { solve } from "./solve";
+import { partB } from "./partB";
 
 const getTime = timer();
 const { values: args } = parseArgs({
@@ -27,16 +26,7 @@ async function main() {
   const lines = splitInputByLine(input);
 
   // output result
-  // USE DURING DEV ↓↓↓↓↓
-  let result: number;
-  if (isPartB) {
-    throw new Error("Part B unimplemented");
-  } else {
-    result = partA(lines);
-  }
-
-  // USE WHEN FINISHED ↓↓↓↓
-  //const result = (isPartB ? partB : partA)(input);
+  const result = (isPartB ? partB : partA)(lines);
   return log.result(result);
 }
 

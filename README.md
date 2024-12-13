@@ -38,14 +38,14 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 20/50
+## Stars: 23/50
 
-| Week |  Monday  |  Tuesday  | Wednesday | Thursday |  Friday  | Saturday |  Sunday  |
-| :--: | :------: | :-------: | :-------: | :------: | :------: | :------: | :------: |
-|  1   |          |           |           |          |          |          | 1st ⭐⭐ |
-|  2   | 2nd ⭐⭐ | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐ | 6th ⭐⭐ | 7th ⭐⭐ | 8th ⭐⭐ |
-|  3   | 9th ⭐⭐ | 10th ⭐⭐ |  11th ⭐  |   12th   |   13th   |   14th   |   15th   |
-|  4   |   16th   |   17th    |   18th    |   19th   |   20th   |   21st   |   22nd   |
+| Week |  Monday  |  Tuesday  | Wednesday | Thursday  |  Friday  | Saturday |  Sunday  |
+| :--: | :------: | :-------: | :-------: | :-------: | :------: | :------: | :------: |
+|  1   |          |           |           |           |          |          | 1st ⭐⭐ |
+|  2   | 2nd ⭐⭐ | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐  | 6th ⭐⭐ | 7th ⭐⭐ | 8th ⭐⭐ |
+|  3   | 9th ⭐⭐ | 10th ⭐⭐ |  11th ⭐  | 12th ⭐⭐ |   13th   |   14th   |   15th   |
+|  4   |   16th   |   17th    |   18th    |   19th    |   20th   |   21st   |   22nd   |
 |  5   |   23rd   |   24th    |   25th    |
 
 ### Skipped Stars:
@@ -53,6 +53,7 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <details>
 <summary><b>Day 11 Part 2</b></summary>
 <p>Could not come up with a solution that doesn't run out of memory in the high 30s. I'm assuming there's some sort of pattern one could take advantage of with the given ruleset, but I'm not the person to figure that out.</p>
+<p>I also saw this is really easily solved by adding caching on top of what I already had, but sadly Map in JS only takes a single key, unlike python dicts, which makes implementing caching a lot harder.</p>
 </details>
 
 <!---
