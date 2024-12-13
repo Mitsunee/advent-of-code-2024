@@ -10,6 +10,14 @@ export function solve(machines: ClawMachine[], isPartB: boolean) {
 
     if (isPartB) {
       throw new Error("Part B unimplemented");
+      /*
+      const modifiedMachine: ClawMachine = {
+        ...machine,
+        prizePos: { x: machine.prizePos.x + 1e13, y: machine.prizePos.y + 1e13 }
+      };
+
+      solution = solveMachine(modifiedMachine);
+      */
     } else {
       solution = solveMachine(machine, 100);
     }
