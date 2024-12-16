@@ -16,7 +16,7 @@
     "lint": "eslint .",
     "lint:strict": "eslint --max-warnings 0 .",
     "typecheck": "tsc",
-    "test": "uvu -r esbuild-register tests -i utils",
+    "test": "uvu -r esbuild-register",
     "test:dir": "uvu -r esbuild-register --ignore '^(?!.*\\.test\\.ts).*\\.ts'",
     "leaderboard": "tsx src/leaderboard/script.ts"
   },
