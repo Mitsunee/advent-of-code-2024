@@ -61,6 +61,11 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <p>That's just maths and it's 23:16 now and I'm too tired for this. Got some hints from reddit: Each machine has at most one solution. Apparently that means binary search is possible, but I could not figure out how to evaluate whether I'm too high or too low.</p>
 </details>
 
+<details>
+<summary><b>Day 16</b></summary>
+<p>I have yet to actually learn a pathfinding algorithm other than bruteforce and both of my attempts at this failed. First I tried to avoid the obvious 'Maximum Callstack size exceed' error by looping over an array instead, which eventually just overfilled memory. Recursion did yield the expected error almost immediatly. Examples do work in both at least.</p>
+</details>
+
 <!---
 <details>
 <summary><b>Day X Part Y</b></summary>
