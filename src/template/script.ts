@@ -11,7 +11,7 @@ const { values: args } = parseArgs({
   options: {
     part: { type: "string", short: "p", default: "a" },
     // ❗ UPDATE THIS: ❗                               ↓↓↓↓↓↓↓↓
-    input: { type: "string", short: "i", default: "input/day-XX.txt" },
+    input: { type: "string", short: "i", default: "input/day-XX-input.txt" },
     verbose: { type: "boolean", short: "v", default: false }
   }
 });

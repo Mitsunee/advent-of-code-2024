@@ -9,7 +9,7 @@ const { values: args } = parseArgs({
   args: process.argv.slice(2),
   options: {
     part: { type: "string", short: "p", default: "a" },
-    input: { type: "string", short: "i", default: "input/day-06.txt" },
+    input: { type: "string", short: "i", default: "input/day-06-input.txt" },
     verbose: { type: "boolean", short: "v", default: false }
   }
 });
