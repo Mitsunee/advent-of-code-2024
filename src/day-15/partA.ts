@@ -1,10 +1,11 @@
 import { log } from "../logger";
 import type { Position } from "../shared/coordinates";
 import { strWith } from "../shared/strWith";
+import { getGPSScore } from "./getGPSScore";
 import type { PuzzleInput, Instruction } from "./parseInput";
 import { directions } from "./parseInput";
 
-export function applyInstruction(
+function applyInstruction(
   pos: Position,
   instruction: Instruction,
   map: string[]
@@ -17,7 +18,7 @@ export function applyInstruction(
       log.debug(`Movement direction: ${diff == -1 ? "up" : "down"}`);
 
       // look for empty space above
-      for (let y = pos.y + diff; y >= 0; y += diff) {
+      for (let y = pos.y + diff; ; y += diff) {
         const char = map[y][pos.x];
         log.debug(`Checking Y ${y}: ${char}`);
         switch (char) {
@@ -78,5 +79,5 @@ export function partA(input: PuzzleInput) {
     log.debug(map.join("\n"));
   }
 
-  return 0; // TODO
+  return getGPSScore(map, "O");
 }
