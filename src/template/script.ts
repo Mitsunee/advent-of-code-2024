@@ -30,8 +30,10 @@ async function main() {
   let result: number;
   if (isPartB) {
     throw new Error("Part B unimplemented");
+    //result = partB(input);
   } else {
     throw new Error("Part A unimplemented");
+    //result = partA(input);
   }
 
   // USE WHEN FINISHED ↓↓↓↓
