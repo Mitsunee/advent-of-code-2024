@@ -64,6 +64,7 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <details>
 <summary><b>Day 16</b></summary>
 <p>I have yet to actually learn a pathfinding algorithm other than bruteforce and both of my attempts at this failed. First I tried to avoid the obvious 'Maximum Callstack size exceed' error by looping over an array instead, which eventually just overfilled memory. Recursion did yield the expected error almost immediatly. Examples do work in both at least.</p>
+<p>Update: I tried again with a speed optimization (using Sets and a Queue instead of arrays), but this didn't help the memory issue. I also attempted to save memory by abandoning paths that already got more expensive than the cheapest completed path, but my script was never able to actually finish a path as it kept hitting deadends.</p>
 </details>
 
 <!---
