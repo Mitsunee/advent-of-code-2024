@@ -1,5 +1,5 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../logger";
+import { col } from "../shared/color";
 import type { Direction, DirectionStr } from "../shared/coordinates";
 import {
   directionArrow,
@@ -9,8 +9,6 @@ import {
 } from "../shared/coordinates";
 import type { PuzzleInput } from "./parseInput";
 import { List } from "@foxkit/list";
-
-const col = createColors(process.stdout?.hasColors?.()); // Dear picocolors, pls fix
 
 interface MazePath {
   visited: Set<DirectionStr>;

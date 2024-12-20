@@ -1,5 +1,5 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../logger";
+import { col } from "../shared/color";
 import type { PositionStr, Position } from "../shared/coordinates";
 import { positionToString } from "../shared/coordinates";
 import {
@@ -7,8 +7,6 @@ import {
   getMapBounds
 } from "../shared/createBoundsChecker";
 import { findNodes } from "./findNodes";
-
-const col = createColors(process.stdout?.hasColors?.()); // Dear picocolors, pls fix
 
 export function solve(map: string[], isPartB: boolean) {
   const { nodeTypes, nodeMap } = findNodes(map);

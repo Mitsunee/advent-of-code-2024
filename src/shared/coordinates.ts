@@ -36,20 +36,29 @@ export function stringToPosition(str: PositionStr) {
   return pos;
 }
 
+export type Directions = "up" | "right" | "down" | "left";
+
 export interface Direction extends Position {
-  direction: "up" | "right" | "down" | "left";
+  direction: Directions;
 }
 
 export type DirectionStr = ReturnType<typeof directionToString>;
 
-export const directionMovement: Record<Direction["direction"], Position> = {
+export const directionMovement: Record<Directions, Position> = {
   up: { x: 0, y: -1 },
   right: { x: 1, y: 0 },
   down: { x: 0, y: 1 },
   left: { x: -1, y: 0 }
 };
 
-export const directionArrow: Record<Direction["direction"], string> = {
+export const directionOpposite: Record<Directions, Directions> = {
+  up: "down",
+  right: "left",
+  down: "up",
+  left: "right"
+};
+
+export const directionArrow: Record<Directions, string> = {
   up: "↑",
   right: "→",
   down: "↓",
@@ -65,7 +74,7 @@ export function directionToString(pos: Direction) {
   return `[${pos.x},${pos.y},${pos.direction}]` as const;
 }
 
-function dirStrIsValid(dirStr: string): dirStr is Direction["direction"] {
+function dirStrIsValid(dirStr: string): dirStr is Directions {
   return (
     dirStr == "up" || dirStr == "right" || dirStr == "down" || dirStr == "left"
   );

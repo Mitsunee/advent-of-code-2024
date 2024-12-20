@@ -1,8 +1,6 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../../logger";
+import { col } from "../../shared/color";
 import type { HitboxMap } from "./types";
-
-const col = createColors(process.stdout?.hasColors?.()); // Dear picocolors, pls fix
 
 export function visualizeHitboxes(hitboxMap: HitboxMap, map: string[]) {
   if (logger.getLogLevel() != "Debug") return;

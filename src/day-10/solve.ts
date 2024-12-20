@@ -1,12 +1,11 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../logger";
+import { col } from "../shared/color";
 import type { Position, PositionStr } from "../shared/coordinates";
 import { positionToString } from "../shared/coordinates";
 import { findTrailHeads } from "./findTrailHeads";
 import { createTrailPathFinder } from "./trailPathFinder";
 
 const hasColors = process.stdout?.hasColors?.();
-const col = createColors(hasColors); // Dear picocolors, pls fix
 
 function filterPaths(paths: Position[][]) {
   // Filter by unique end position

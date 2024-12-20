@@ -1,5 +1,5 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../logger";
+import { col } from "../shared/color";
 import type { Direction, DirectionStr } from "../shared/coordinates";
 import {
   directionArrow,
@@ -8,8 +8,6 @@ import {
   stringToDirection
 } from "../shared/coordinates";
 import type { PuzzleInput } from "./parseInput";
-
-const col = createColors(process.stdout?.hasColors?.()); // Dear picocolors, pls fix
 
 function visualizePath(path: Array<DirectionStr>, map: string[]) {
   if (logger.getLogLevel() != "Debug") return;

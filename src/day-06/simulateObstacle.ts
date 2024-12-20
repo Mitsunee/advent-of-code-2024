@@ -1,12 +1,10 @@
-import { createColors } from "picocolors";
 import { log, logger } from "../logger";
+import { col } from "../shared/color";
 import type { createBoundsChecker } from "../shared/createBoundsChecker";
 import type { DirStr } from "./Direction";
 import { directionArrows, getNextDirection, posToDirStr } from "./Direction";
 import { getNextPos } from "./getNextPos";
 import { posToCoordStr, type GuardPosition, type PosStr } from "./Position";
-
-const col = createColors(process.stdout?.hasColors?.()); // Dear picocolors, pls fix
 
 interface ObstacleSimulatorOpts {
   map: string[];
