@@ -67,6 +67,11 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <p>Update: I tried again with a speed optimization (using Sets and a Queue instead of arrays), but this didn't help the memory issue. I also attempted to save memory by abandoning paths that already got more expensive than the cheapest completed path, but my script was never able to actually finish a path as it kept hitting deadends.</p>
 </details>
 
+<details>
+<summary><b>Day 17</b></summary>
+<p>Could not understand instructions, may attempt again later.</p>
+</details>
+
 <!---
 <details>
 <summary><b>Day X Part Y</b></summary>
