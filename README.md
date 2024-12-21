@@ -38,14 +38,14 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 30/50
+## Stars: 32/50
 
 | Week |  Monday  |  Tuesday  | Wednesday | Thursday  |  Friday  | Saturday  |  Sunday   |
 | :--: | :------: | :-------: | :-------: | :-------: | :------: | :-------: | :-------: |
 |  1   |          |           |           |           |          |           | 1st ⭐⭐  |
 |  2   | 2nd ⭐⭐ | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐  | 6th ⭐⭐ | 7th ⭐⭐  | 8th ⭐⭐  |
 |  3   | 9th ⭐⭐ | 10th ⭐⭐ |  11th ⭐  | 12th ⭐⭐ | 13th ⭐  | 14th ⭐⭐ | 15th ⭐⭐ |
-|  4   |   16th   |   17th    | 18th ⭐⭐ |   19th    |   20th   |   21st    |   22nd    |
+|  4   |   16th   |   17th    | 18th ⭐⭐ | 19th ⭐⭐ |   20th   |   21st    |   22nd    |
 |  5   |   23rd   |   24th    |   25th    |
 
 ### Skipped Stars:
@@ -65,6 +65,7 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <summary><b>Day 16</b></summary>
 <p>I have yet to actually learn a pathfinding algorithm other than bruteforce and both of my attempts at this failed. First I tried to avoid the obvious 'Maximum Callstack size exceed' error by looping over an array instead, which eventually just overfilled memory. Recursion did yield the expected error almost immediatly. Examples do work in both at least.</p>
 <p>Update: I tried again with a speed optimization (using Sets and a Queue instead of arrays), but this didn't help the memory issue. I also attempted to save memory by abandoning paths that already got more expensive than the cheapest completed path, but my script was never able to actually finish a path as it kept hitting deadends.</p>
+<p>Update 2: I have now actually learned Dijkstra's Shortest Path to solve day 18, so I'll likely reattempt this after I've caught up</p>
 </details>
 
 <details>
