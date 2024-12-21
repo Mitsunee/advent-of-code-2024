@@ -38,14 +38,14 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 34/50
+## Stars: 35/50
 
 | Week |  Monday  |  Tuesday  | Wednesday | Thursday  |  Friday   | Saturday  |  Sunday   |
 | :--: | :------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
 |  1   |          |           |           |           |           |           | 1st ⭐⭐  |
 |  2   | 2nd ⭐⭐ | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐  | 6th ⭐⭐  | 7th ⭐⭐  | 8th ⭐⭐  |
 |  3   | 9th ⭐⭐ | 10th ⭐⭐ |  11th ⭐  | 12th ⭐⭐ |  13th ⭐  | 14th ⭐⭐ | 15th ⭐⭐ |
-|  4   |   16th   |   17th    | 18th ⭐⭐ | 19th ⭐⭐ | 20th ⭐⭐ |   21st    |   22nd    |
+|  4   |   16th   |   17th    | 18th ⭐⭐ | 19th ⭐⭐ | 20th ⭐⭐ |  21st ⭐  |   22nd    |
 |  5   |   23rd   |   24th    |   25th    |
 
 ### Skipped Stars:
@@ -71,6 +71,11 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <details>
 <summary><b>Day 17</b></summary>
 <p>Could not understand instructions, may attempt again later.</p>
+</details>
+
+<details>
+<summary><b>Day 21 Part 2</b></summary>
+<p>Needs some sort of caching, but with how I implemented the robots I don't know if I can even add that</p>
 </details>
 
 <!---
