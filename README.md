@@ -78,6 +78,11 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <p>Needs some sort of caching, but with how I implemented the robots I don't know if I can even add that</p>
 </details>
 
+<details>
+<summary><b>Day 22 Part 2</b></summary>
+<p>This seems impossible with the amount of input lines. Would probably run out of memory if I were to generate the sequences for every input to compare, so there's likely some math nonsense going on here. Sadly I remain a freelance frontend dev, not a university professor.</p>
+</details>
+
 <!---
 <details>
 <summary><b>Day X Part Y</b></summary>
