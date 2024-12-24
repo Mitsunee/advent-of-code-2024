@@ -38,7 +38,7 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 38/50
+## Stars: 39/50
 
 | Week |  Monday   |  Tuesday  | Wednesday | Thursday  |  Friday   | Saturday  |  Sunday   |
 | :--: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -46,7 +46,7 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 |  2   | 2nd ⭐⭐  | 3rd ⭐⭐  | 4th ⭐⭐  | 5th ⭐⭐  | 6th ⭐⭐  | 7th ⭐⭐  | 8th ⭐⭐  |
 |  3   | 9th ⭐⭐  | 10th ⭐⭐ |  11th ⭐  | 12th ⭐⭐ |  13th ⭐  | 14th ⭐⭐ | 15th ⭐⭐ |
 |  4   |   16th    |   17th    | 18th ⭐⭐ | 19th ⭐⭐ | 20th ⭐⭐ |  21st ⭐  |  22nd ⭐  |
-|  5   | 23rd ⭐⭐ |   24th    |   25th    |
+|  5   | 23rd ⭐⭐ |  24th ⭐  |   25th    |
 
 ### Skipped Stars:
 
@@ -81,6 +81,11 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <details>
 <summary><b>Day 22 Part 2</b></summary>
 <p>This seems impossible with the amount of input lines. Would probably run out of memory if I were to generate the sequences for every input to compare, so there's likely some math nonsense going on here. Sadly I remain a freelance frontend dev, not a university professor.</p>
+</details>
+
+<details>
+<summary><b>Day 24 Part 2</b></summary>
+<p>I was trying to analyze my input a bit, to have some assumptions to work with, so I determined I wanted to check if a swap exists that fixes 3 of the incorrect zeros. Literally the first swap my code would try after sorting by what's most likely created an infinite loop and I'm honestly out of ideas for what to try other than bruteforce (which would also need a way to detect loops)</p>
 </details>
 
 <!---
