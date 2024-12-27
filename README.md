@@ -38,7 +38,7 @@ To create a src directory for starting a solution with the script template simpl
 
 If used out-of-season the script also takes a day number as parameter like `./prepare.sh 06`. See also `./prepare.sh --help`.
 
-## Stars: 39/50
+## Stars: 40/50
 
 | Week |  Monday   |  Tuesday  | Wednesday | Thursday  |  Friday   | Saturday  |  Sunday   |
 | :--: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -88,12 +88,10 @@ If used out-of-season the script also takes a day number as parameter like `./pr
 <p>I was trying to analyze my input a bit, to have some assumptions to work with, so I determined I wanted to check if a swap exists that fixes 3 of the incorrect zeros. Literally the first swap my code would try after sorting by what's most likely created an infinite loop and I'm honestly out of ideas for what to try other than bruteforce (which would also need a way to detect loops)</p>
 </details>
 
-<!---
 <details>
-<summary><b>Day X Part Y</b></summary>
-<p>This is a description of what problem I had solving this puzzle</p>
+<summary><b>Day 25 Part 2</b></summary>
+<p>Star not available unless all other puzzles are solved</p>
 </details>
--->
 
 ## Previous Years I participated
 
